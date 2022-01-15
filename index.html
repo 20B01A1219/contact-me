@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 align = "center">Contact me by the following Details</h2>
+    <table align = "center" border = 1>
+        <tr align = "center">
+            <td>Phone Number</td>
+            <td>7093996797</td>
+        </tr>
+        <tr align = "center">
+            <td>Email</td>
+            <td>sairamyasripallavi22@gmail.com <br><br>
+            20b01a1219@svecw.edu.in</td>
+        </tr>
+        <tr align = "center">
+            <td>My Linkedin</td>
+            <td>https://www.linkedin.com/in/bonthu-sai-ramya-sri-pallavi-019a18223</td>
+        </tr>
+    </table><br><br><br>
+    <p align = "center">Or You can submit your details by below</p>
+    <form align = "center">
+        <label>Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id = "input1" type="text" class = "text-field"><br><br>
+        <label>Phone number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id = "input2"  type="number" class = "text-field"><br><br>
+        <label>E-Mail</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id = "input3"  type="e-mail" class = "text-field"><br><br>
+        <button id = "btn">Submit my details</button>
+    </form>
+    <p id = "submit" align = "center">Your Details are submitted succesfully</p>
+    <script>
+         document.getElementById('submit').style.visibility="hidden";
+         let b = document.getElementById("btn");
+         let text1 = document.getElementById("input1");
+         let text2 = document.getElementById("input2");
+         let text3 = document.getElementById("input3");
+         
+         b.addEventListener("click", function(e){
+             e.preventDefault();
+             if(text1.value === ""||text2.value === ""||text3.value === "")
+             {
+                 alert("Enter your details");
+             }
+            else
+             {
+                  document.getElementById('submit').style.visibility="visible";
+             }
+         });
+
+    </script>
+</body>
+</html>

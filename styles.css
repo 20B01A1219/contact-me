@@ -1,0 +1,36 @@
+table{
+    margin-top : 100px;
+    width: 750px;
+    border : 2px solid red;
+    border-collapse: collapse;
+    font-size: 20px;
+    color : darkmagenta;
+}
+body{
+    background-image:url("https://acegif.com/wp-content/uploads/gif-for-presentation-91.gif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    color : orange;
+}
+p{
+    color : blue;
+}
+.text-field
+{
+    width : 500px;
+}
+button{
+    background-color: brown;
+    color : white;
+    width : 185px;
+    border : 2px solid white;
+    border-radius : 15px;
+}
+button:hover{
+    font-size: 18px;
+}
+#submit{
+    color :red;
+}
